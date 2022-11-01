@@ -1,4 +1,4 @@
-const { app, BrowserWindow, screen } = require('electron');
+const { app, BrowserWindow, screen, ipcMain } = require('electron');
 
 const createWindow = () => {
     const { width, height } = screen.getPrimaryDisplay().workAreaSize;
@@ -7,13 +7,14 @@ const createWindow = () => {
         width: width / 1.25,
         height: height / 1.25,
         icon: './public/rk.png',
+        frame: false,
         webPreferences: {
             nodeIntegration: true
         }
     });
 
     window.loadFile('public/index.html');
-    window.setMenu(null);
+    //window.setMenu(null);
     window.webContents.openDevTools();
 };
 

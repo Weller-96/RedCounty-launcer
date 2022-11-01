@@ -1,3 +1,6 @@
+<script>
+
+</script>
 <main>
     <header>
         <nav>
@@ -14,7 +17,11 @@
             </ul>
         </nav>
     </header> 
-    <section class="index">
-
+    <section class="server">
+        <h1>Наши сервера</h1>
+        <div class="server-donut">
+            <h2>Сервер #1</h2>
+            <p>100/200</p>
+        </div>
     </section>  
 </main>
